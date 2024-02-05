@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:9000');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    background: rgb(228, 226, 226);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.rotate-bae{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}
+
+.rotate-bae h2
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    font-size: 6em;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.rotate-bae h2 span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    transition: 0.5s ;
+    clip-path: polygon(0 0,100% 0,100% 50%,0% 50%);
+    overflow: hidden;
+}
+
+.rotate-bae h2:hover span:nth-child(1){
+    transform: translateY(-18px);
+}
+
+.rotate-bae h2 span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    transition: 0.5s ;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    overflow: hidden;
+}
+
+.rotate-bae h2:hover span:nth-child(2){
+    transform: translateY(18px);
+}
+
+.rotate-bae h2 span:nth-child(3){
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scaleY(0);
+    width: 91%;
+    color: #000;
+    background-color: #ff0;
+    font-size: 0.25em;
+    font-weight: 500;
+    transition: 0.5s ;
+    letter-spacing: 0.7em;
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+
+.rotate-bae h2:hover span:nth-child(3){
+    transform: translateY(-50%) scaleY(1);
+}
+
+.rotate-bae:last-of-type span:nth-child(3){
+    font-size: 0.2em;
+    margin: 0;
+    background: #00bcd4;
+    text-align: center;
+}
